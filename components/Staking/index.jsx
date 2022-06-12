@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/Image';
-import logo from '../../assets/logo.svg';
+import Image from 'next/image';
+import logoIcon from '../../assets/logo.svg';
 import cl from './style.module.scss';
 
 
@@ -31,7 +31,7 @@ const Staking = () => (
     </div>
     <div className={cl.staking_logo}>
       <div className={cl.logo}>
-        <Image width={200} height={175} src={logo} alt="logo" />
+        <Image width={200} height={175} src={logoIcon} alt="logos1" />
       </div>
       <p>
         APY

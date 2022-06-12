@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../../assets/logo.svg';
+import logoIcon from '../../assets/logo.svg';
 import menu from '../../assets/burger_menu.svg';
 import cl from './style.module.scss';
 
@@ -10,7 +10,7 @@ const Header = ({burgerMenu ,setBurgerMenu}) => (
   <div className="container">
     <div className={cl.header}>
       <div className={cl.logo}>
-        <Image width={36} src={logo} alt="logo" />
+        <Image width={36} src={logoIcon} alt="logo" />
         <h3>
           Tsunami
         </h3>

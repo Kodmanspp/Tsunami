@@ -30,13 +30,19 @@ const About = () => (
       </div>
       <div className={cl.links}>
         <Link href="/">
-          <Image src={twitter} alt="twitter" />
+          <a>
+            <Image src={twitter} alt="twitter" />
+          </a>
         </Link>
         <Link href="/">
-          <Image src={github} alt="github" />
+          <a>
+            <Image src={github} alt="github" />
+          </a>
         </Link>
         <Link href="/">
-          <Image src={discord} alt="discord" />
+          <a>
+            <Image src={discord} alt="discord" />
+          </a>
         </Link>
       </div>
     </div>
