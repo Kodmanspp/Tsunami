@@ -3,7 +3,7 @@
 .staking{
   display: grid;
   grid-template-columns: 2fr 1.8fr;
-  margin-top: 200px;
+  padding-top: 200px;
   grid-gap: 160px;
 }
 
@@ -117,6 +117,16 @@
   .staking_logo{
     padding: 70px 0 80px;
   }
+  .btn{
+    width: 100%;
+  }
+  .actions{
+    grid-gap: 24px;
+    height: 160px;
 
+  }
+  .btn_outlined {
+    width: 100%;
+  }
 }
 

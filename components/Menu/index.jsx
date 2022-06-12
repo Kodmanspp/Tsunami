@@ -2,18 +2,18 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../../assets/logo.svg';
-import menu from '../../assets/burger_menu.svg';
 import cl from './style.module.scss';
 
 
-const Header = ({burgerMenu ,setBurgerMenu}) => (
-  <div className="container">
-    <div className={cl.header}>
+const Menu = ({burgerMenu, setBurgerMenu}) => (
+  <div onClick={() => setBurgerMenu(!burgerMenu)} className={cl.container}>
+    <div onClick={(e) => e.stopPropagation()} className={cl.menu}>
       <div className={cl.logo}>
         <Image width={36} src={logo} alt="logo" />
         <h3>
           Tsunami
         </h3>
+        <div onClick={() => setBurgerMenu(false)} className={cl.close}/>
       </div>
       <div className={cl.links}>
         <ul className={cl.links_list}>
@@ -45,12 +45,9 @@ const Header = ({burgerMenu ,setBurgerMenu}) => (
             </Link>
           </li>
         </ul>
-        <button onClick={() => setBurgerMenu(!burgerMenu)} color="primary" className={cl.burger_menu}>
-          <Image src={menu} alt="menu" />
-        </button>
       </div>
     </div>
   </div>
 );
 
-export default Header;
+export default Menu;

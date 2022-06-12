@@ -6,7 +6,7 @@ import cl from './style.module.scss';
 
 
 const Staking = () => (
-  <div className={`${cl.staking} container`}>
+  <div className={`${cl.staking} container`} id="staking">
     <div className={cl.content}>
       <h2 className={cl.title}>
         Staking TSN
@@ -17,12 +17,12 @@ const Staking = () => (
         futures markets with leverage of up to factor of 10.
       </p>
       <div className={cl.actions}>
-        <Link href="#">
+        <Link href="/">
           <button className={`${cl.btn} btn_primary`}>
             Go by
           </button>
         </Link>
-        <Link href="#">
+        <Link href="/">
           <button className={`${cl.btn_outlined}`}>
             Learn more
           </button>
